@@ -1,0 +1,23 @@
+{
+  "name": "nikerun",
+  "version": "0.1.0",
+  "description": "A microservice for showing my runs on Nike Run Club.",
+  "repository": "https://github.com/CameronShum/nikerun",
+  "author": "Cameron Shum",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "nodemon server.js",
+    "prod": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
