@@ -9,7 +9,9 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "nodemon server.js",
-    "prod": "node server.js"
+    "prod": "node server.js",
+    "buildClient": "babel nike -d nike",
+    "build": "babel ./nike routes.js server.js -d public"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -18,6 +20,8 @@
     "koa-router": "^7.4.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
     "nodemon": "^1.19.1"
   }
 }
